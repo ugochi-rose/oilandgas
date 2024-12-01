@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/services.css">
+
+    <style>
+        .carousel-item {
+        display: flex;              /* Enable flexbox layout */
+        justify-content: center;    /* Center horizontally */
+        align-items: center;       /* Center vertically */
+        height: 55vh;              /* Ensure the carousel takes full viewport height */
+    }
+
+    .container.img-text {
+        text-align: center;         /* Center the text inside the container */
+        z-index: 2;
+        color: white !important;            /* Ensure the text is above other elements if necessary */
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg  border-body py-3 bg-white">
+        <div class="container px-5">
+            <!-- <div class="nav-animation"> -->
+                <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="" width="80" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars border-0"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: white !important;"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-bold text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link active me-4 ms-lg-0 ms-5" aria-current="page" href="#scrollspyHeading1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="#scrollspyHeading2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="#scrollspyHeading3">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="#scrollspyHeading4">Career</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="#scrollspyHeading5">Contact Us</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex " role="search">
+                            <a href="#" class="get-in-touch btn btn-primary pt-2 ms-lg-0 ms-5">GET A QUOTE</a>
+                        </form>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+    <!-- end nav -->
+    <div class="body" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+        <!-- hero-section -->
+        <div id="scrollspyHeading1" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image-wrapper">
+                        <div class="image-container">
+                            
+                        </div>
+                    </div>
+                    <div class="container img-text px-5 text-center ">
+                        <div class="row justify-content-center">
+                            <div class="col-6">
+                                <!-- breadcrumb -->
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="home1.php" style="color:#8bf2ee !important">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page" style="color:#8bf2ee !important">Get a Quote</li>
+                                    </ol>
+                                </nav>
+                                <h4 class="fade-in fw-bold" style="font-size: 3rem;">Our Services</h4>
+                                <p>What we offer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end hero-section -->
+
+        <section>
+            <div class="container p-5">
+                <div class="row text-center justify-content-center py-5">
+                    <div class="col-lg-7 col-md-5 text-center">
+                    <h4 class="about-heading pb-2" style="font-weight: 600; color:#001f3f">Services</h4>
+                        <p class="pt-2">At Kemof Nigeria LTD, we believe our people are our greatest strength.
+                            We hire and retain skilled, passionate, and dedicated professionals who exemplify integrity, persistence, and confidence. Continuous training is essential here, as joining our team means being part of a Nigerian organization that meets global standards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section>
+            <div class="container px-5">
+                <div class="row">
+                    <!-- Card 1: Image left, text right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 100%;">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <img src="../img/inspection.png" class="img-fluid rounded-start w-75" alt="Image 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">Quality</h5>
+                                        <p class="card-text text-secondary pt-3" style="font-size: 13px;">Modules or Equipment should be independently checked before leaving the manufacturer’s
+                                        yard; to confirm that ordered specifications are met, correct materials were used,
+                                        dimensional checks are correct. We can witness factory acceptance test and pre-shipment
+                                        inspection; ensure that all required As-Built documents are in place
+
+                                        <p class="card-text text-secondary">In this way you can avoid unpleasant surprises when your equipment arrives at site, far
+                                        away from the OEM’s yard and therefore far away from quick remedial action.</p>
+
+                                        <p class="card-text text-secondary">We can leverage on our dual nationality status, with a European Passport which gives us
+                                        easy access to any country where manufacturing surveillance inspection is required.
+                                        We can review Manufacturing Inspection Test Plan ( MITP) and include adequate ‘Hold
+                                        Point’ and ‘Witness Point’ to ensure that specified quality is achieved.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Text left, image right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 90%;">
+                            <div class="row g-0 flex-row-reverse">
+                                <div class="col-md-6">
+                                    <img src="../img/inspection.png" class="img-fluid rounded-end w-75 float-end" alt="Image 2"  style="font-size: 13px;">
+                                </div>
+                                <div class="col-md-6">
+                                <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">Engineering Integrity</h5>
+                                        <p class="card-text text-secondary pt-3">Avoiding unplanned downtime, enhances the safety of personnel, protects the environment,
+                                        reduces expensive reactive maintenance costs and increases continued production
+                                        revenues.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Image left, text right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 100%; padding-top:">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="image3.jpg" class="img-fluid rounded-start" alt="Image 3">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">Optimal inspection planning</h5>
+                                        <p class="card-text text-secondary">By applying methodologies like Reliability Centered Maintenance (RCM) and Risk based
+                                        Inspections (RBI), we select the right inspection techniques to achieve optimum life-cycle
+                                        cost. Per asset choices are made between decay, reactive, planned, proactive and predictive
+                                        maintenance strategies. </p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Text left, image right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 100%;">
+                            <div class="row g-0 flex-row-reverse align-items-center">
+                                <div class="col-md-6">
+                                    <img src="../img/inspection.png" class="img-fluid rounded-end w-100" style="height: 500px" alt="Image 4" style="object-fit: cover; height: 100%;">
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">Inspection</h5>
+                                        <p class="card-text text-secondary">
+                                            We pride ourselves on our number of expert Inspection Engineers with sound knowledge of damage mechanisms and failure modes. 
+                                            We can make a visual assessment of the condition of your equipment and make recommendations that will improve the life of the item. 
+                                            Our large number of API inspectors can provide you with Inspection support during turnarounds.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Image left, text right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 100%;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-6">
+                                    <img src="../img/tube.png" class="img-fluid rounded-start" alt="Image 5">
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center">
+                                <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">Fixed Exchanger Retube</h5>
+                                        <p class="card-text text-secondary">We are pleased to have a business partner with a company in the UK that specialises in
+                                        retube of fixed exchangers around the world. They also specialise in in the fabrication and
+                                        repair of pressure vessels.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Text left, image right -->
+                    <div class="col-12 mb-3">
+                        <div class="card mb-3" style="max-width: 100%;">
+                            <div class="row g-0 flex-row-reverse">
+                                <div class="col-md-4">
+                                    <img src="image6.jpg" class="img-fluid rounded-end" alt="Image 6">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                        <h5 class="card-title" style="color:#001f3f; font-weight:700">NDT</h5>
+                                        <p class="card-text text-secondary">We have a full range of NDT tools ranging from MPI, DPI, UT, ET AUT, drones and robotics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <footer class="" style="background-color:#001f3f">
+            <div class="container p-5">
+                <section class="#">
+                <div class="row justify-content-center text-lg-start text-center">
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0 pt-5">
+                        <h5 class="text-uppercase fw-bold text-white">KEMOF</h5>
+                        <p class="text-secondary pt-2" style="font-size: 14.4px;">Expert Solutions in Asset integrity and <br>Performance Optimization for the Energy</p>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-5 text-lg-start text-center">
+                        <h6 class="fw-bold text-white">Links</h6>
+
+                    <ul class="list-unstyled mb-0 pt-2">
+                        <li>
+                        <a class="text-capitalize text-secondary" href="#!" style="text-decoration:none !important; letter-spacing:normal !important; font-size: 14.4px;">About</a>
+                        </li>
+                        <li>
+                        <a class="text-capitalize text-secondary" href="#!" style="text-decoration:none !important; letter-spacing:normal !important; font-size: 14.4px;">Services</a>
+                        </li>
+                        <li>
+                        <a class="text-capitalize text-secondary" href="apply.php" style="text-decoration:none !important; letter-spacing:normal !important; font-size: 14.4px;">Career</a>
+                        </li>
+                        <li>
+                        <a class="text-capitalize text-secondary" href="#!" style="text-decoration:none !important; letter-spacing:normal !important; font-size: 14.4px;">Contact Us</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-5 text-lg-start text-center">
+                        <h6 class="fw-bold text-white">Information</h6>
+
+                    <ul class="list-unstyled mb-0">
+                        <div class="contact-info text-lg-start text-center pt-2">
+                                <div class="info-section">
+                                    <i class="bi bi-telephone-outbound me-1 text-secondary" style="font-size: 1rem;"></i>
+                                    <span class="text-secondary" style="font-size: 14.4px">+123 456 678 890</span>
+                                </div>
+                                <div class="info-section my-1">
+                                    <i class="bi bi-geo-alt-fill me-1 text-secondary" style="font-size: 1rem;"></i>
+                                    <span class="text-secondary" style="font-size: 14.4px">1234 Street Rd, #105, San Francisco, CA</span>
+                                </div>
+                                <div class="info-section">
+                                    <i class="bi bi-alarm me-1 text-secondary" style="font-size: 1rem;"></i>
+                                    <span class="text-secondary" style="font-size: 14.4px">Mon. - Fri. 11AM - 19PM</span>
+                                </div>
+
+
+                            </div>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="text-center pt-5 text-secondary">
+                    <hr style="width: 100% !important">
+                    <div class=""></div>
+                    © 2020 Copyright:
+                    <a class="text-decoration-none text-secondary" href="#">kemof</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-floating btn-lg"  id="btn-back-to-top" style="background-color: #8bf2ee !important;"><i class="fas fa-arrow-up" style="border-radius: 2px important;"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../javascript/home1.js"></script>
+  </body>
+</html>
