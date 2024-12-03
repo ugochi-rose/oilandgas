@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/get-a-quote.css">
+
+    <style>
+        .carousel-item {
+        display: flex;              /* Enable flexbox layout */
+        justify-content: center;    /* Center horizontally */
+        align-items: center;       /* Center vertically */
+        height: 55vh;              /* Ensure the carousel takes full viewport height */
+    }
+
+    .container.img-text {
+        text-align: center;         /* Center the text inside the container */
+        z-index: 2;
+        color: white !important;            /* Ensure the text is above other elements if necessary */
+    }
+    .form-control{
+        background-color: whitesmoke !important;
+        border-radius: 5px !important;
+        color: #234342;
+    }
+    .form-control:focus{
+        border: 1px solid #234342 !important;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <!-- nav -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg  border-body py-3 bg-white">
+        <div class="container px-5">
+            <!-- <div class="nav-animation"> -->
+                <a class="navbar-brand" href="#">
+                <img src="../oilandgas/img/logo.png" alt="" width="80" height="70">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars border-0"></i></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: white !important;"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 fw-bold text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" aria-current="page" href="#scrollspyHeading1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="#scrollspyHeading2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="services.php">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4 ms-lg-0 ms-5" href="apply.php">Career</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex " role="search">
+                            <a href="#" class="get-in-touch btn btn-primary pt-2 ms-lg-0 ms-5">CONTACT US</a>
+                        </form>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </nav>
+    <!-- end nav -->
+    <div class="body" data-bs-spy="scroll" data-bs-target="#navbar-example2">
+        <!-- hero-section -->
+        <div id="scrollspyHeading1" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image-wrapper">
+                        <div class="image-container">
+                            
+                        </div>
+                    </div>
+                    <div class="container img-text px-5 text-center ">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-12">
+                                <!-- breadcrumb -->
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item"><a href="home1.php" style="color:#8bf2ee !important">Home</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page" style="color:#8bf2ee !important">Get a Quote</li>
+                                    </ol>
+                                </nav>
+                                <h4 class="fade-in fw-bold" style="font-size: 3rem;">Contact Us</h4>
+                                <p>Work with Us</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end hero-section -->
+
+        <section>
+            <div class="container py-5 px-lg-5">
+                <div class="row text-center justify-content-center py-5">
+                    <div class="col-lg-7 col-md-5 text-center">
+                    <h4 class="" style="font-weight: 600; color:#001f3f">Connect with Us</h4>
+                        <p class="">We are excited to hear from you</p>
+                    </div>
+                </div>
+
+                <div class="row  mx-auto justify-content-center py-5">
+                    <div class="col-md-12 col-lg-7">
+                        <div class="form-bg p-lg-5 py-5 px-4 me-md-4 shadow mb-lg- mb-5" style="background-color: white; border-radius: 5px; border-bottom: 3px solid #8bf2ee;">
+                            <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation" novalidate>
+                                <h4 class="pb-3" style="font-weight: 600;">Get in Touch with Us</h4>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-md-3">
+                                        <!-- Access kry for form to email submittion -->
+                                        <input type="hidden" name="access_key" value="b5d85b7c-d36c-4956-8ee1-570b937821fd">
+                                        <input type="text" name="contact_name" class="form-control" id="firstName" placeholder="Name" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your name.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="contact_email" class="form-control mt-3 mt-md-0" id="email" placeholder="Email" required>
+                                        <div class="invalid-feedback">
+                                            Please provide your email.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-12 mb-md-3">
+                                        <input type="text" name="contact_subject" class="form-control " id="subject" placeholder="Subject" required>
+                                        <div class="invalid-feedback">
+                                            Please enter your subject.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <div class="col-md-12">
+                                        <textarea name="contact_message" class="form-control form-control mb-3" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+                                        <div class="invalid-feedback">
+                                            Please enter your message.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-4 justify-content-end">
+                                        <div class="col-12">
+                                            <button type="submit" class="btn-body career-btn btn btn-primary px-5 py-2" style="border-radius: 5px!important;">Submit</button>
+                                        </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5 ps-lg-5 ps-0 pt-5 col-11">
+                        <h4 style="font-weight: 600;">Contact Details</h4>
+                        <div class="row">
+                            <div class="col-lg-10 col-md-12">
+                                <p class="mt-2" style="font-size: 14.4px;">We will love to hear from you! Contact us today if you have questions, dicuss your goals, get a quote or learn more about our services. </p>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-lg-9 col-12 pt-lg-2">
+                                <div class="d-flex align-items-start mb-2">
+                                    <!-- Icon (kept outside the grouped container) -->
+                                    <i class="bi bi-geo-alt-fill me-1" style="font-size: 1.2rem; color: #8bf2ee; 
+                                    padding-top: 0.8rem !important"></i>
+                                    <!-- Grouped Content -->
+                                    <div class="d-flex flex-column p-3">
+                                        <!-- Location Title -->
+                                        <h6 class="m-0" style="font-weight: 600;">Locations</h6>
+                                        <!-- Address 1 -->
+                                        <div class="text-wrap pt-2" style="font-size: 14.4px;">
+                                            <span>Plot 24, Road 5, Off Ada George/Location Road Port Harcourt</span>
+                                        </div>
+                                        <!-- Address 2 -->
+                                        <div class="text-wrap pt-3" style="font-size: 14.4px;">
+                                            <span>186 Westorn Road Grangemouth FK3 9EZ, United Kingdom</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-lg-9 col-12">
+                                <div class="d-flex align-items-start">
+                                    <!-- Icon -->
+                                    <i class="bi bi-envelope-fill me-2" style="font-size: 1.2rem; color: #8bf2ee;  
+                                    padding-top: 0.8rem !important"></i>
+                                    <!-- Grouped Content -->
+                                    <div class="d-flex flex-column p-3">
+                                        <!-- Title -->
+                                        <h6 class="m-0" style="font-weight: 600;">Email Us</h6>
+                                        <!-- Email -->
+                                        <div class="text-wrap pt-2" style="font-size: 14.4px;">
+                                            <span>info@kemof-ng.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-lg-7 col-12">
+                                <div class="d-flex align-items-start">
+                                    <!-- Icon -->
+                                    <i class="bi bi-telephone-fill me-2" style="font-size: 1.2rem; color: #8bf2ee;   
+                                    padding-top: 0.8rem !important"></i>
+                                    <!-- Grouped Content -->
+                                    <div class="d-flex flex-column p-3">
+                                        <!-- Title -->
+                                        <h6 class="m-0" style="font-weight: 600;">Phone</h6>
+                                        <!-- Phone Number -->
+                                        <div class="text-wrap pt-2" style="font-size: 14.4px;">
+                                            <span>+447534447673</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="" style="background-color:#fcfffe">
+            <div class="container p-5">
+                <div class="row justify-content-center text-lg-start text-center">
+                    <div class="col-lg-5 col-md-6 mb-4 mb-md-0 pt-5">
+                        <h6 class="mb-4" style="font-size: 15px;">
+                        <img src="../oilandgas/img/logo.png" class="me-3" style="width:40px">KEMOG NIG LIMITED
+                        </h6>
+                        <p class="text-secondary">Expert Solutions in Asset integrity and <br>Performance Optimization for the Energy</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-5 text-lg-start text-center">
+                        <h6 class="mb-4">Useful links</h6>
+                        <div class="text-secondary" style="font-size: 14.4px;">
+                            <p><a href="#!" class="text-reset">Home</a></p>
+                            <p><a href="#!" class="text-reset">About</a></p>
+                            <p><a href="#!" class="text-reset">Services</a></p>
+                            <p><a href="#!" class="text-reset">contact</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 pt-5 text-lg-start text-center">
+                        <h6 class="mb-4">Information</h6>
+                        <div class="text-secondary" style="font-size: 14.4px;">
+                            <p><i class="fas fa-home me-3" style="color:#8bf2ee"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope me-3" style="color:#8bf2ee"></i>info@example.com</p>
+                            <p><i class="fas fa-phone me-3" style="color:#8bf2ee"></i> + 01 234 567 88</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- <div class="text-center pt-5 text-secondary">
+                    <hr style="width: 100% !important">
+                    <div class=""></div>
+                    © 2020 Copyright:
+                    <a class="text-decoration-none text-secondary" href="#">kemof</p>
+                </div> -->
+
+                <hr style="width: 100% !important">
+                <div class="text-center">
+                    © 2024 Copyright:
+                    <a class="text-reset" href="https://kemofniglimited.com/">kemof Nig Limited</a>
+                </div>
+            </div>
+        </footer>
+
+<!-- Footer -->
+
+    </div>
+
+    <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-danger btn-floating btn-lg"  id="btn-back-to-top" style="background-color: #8bf2ee !important;"><i class="fas fa-arrow-up" style="border-radius: 2px important;"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../javascript/home1.js"></script>
+  <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+            })()
+    </script>
+  </body>
+</html>
